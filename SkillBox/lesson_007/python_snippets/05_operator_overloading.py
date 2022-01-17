@@ -77,6 +77,7 @@ son_backpack = Backpack(gift='банан')
 new_backpack = my_backpack + son_backpack
 print(new_backpack)
 
+
 # other_backpack = my_backpack + ['яблоко', 'апельсин', ]
 # print(other_backpack)
 
@@ -120,6 +121,7 @@ print(my_backpack)
 
 
 # Не обязательно возвращать объект такого же класса(типа)
+
 class Bread:
 
     def __str__(self):
@@ -152,7 +154,6 @@ borodinsky = Bread()
 salami = Sausage()
 result = borodinsky + salami
 print(result)
-
 
 # эмуляция вызова функции - это когда объект ведет себя как функция
 # object.__call__(self[, args...]) - вызов как функции

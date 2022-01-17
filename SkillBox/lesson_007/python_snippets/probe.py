@@ -70,18 +70,19 @@ class House:
         return 'In my house eat : {}, money : {}'.format(self.food, self.money)
 
 
-man = Man(name='Valusa')
-beavis = Man(name='Bivis')
-badhead = Man(name='Badhead')
+citizens = [
+    Man(name='Bivis'),
+    Man(name='Badhead')
+]
+# man = Man(name='Valusa')
+# beavis = Man(name='Bivis')
+# badhead = Man(name='Badhead')
 
 house = House()
 
-beavis.go_to_house(house)
-badhead.go_to_house(house)
-
 for day in range(1, 21):
     print('============= day : {} ============'.format(day))
-    beavis.act()
-    badhead.act()
-    print(beavis)
-    print(badhead)
+    for citizen in citizens:
+        citizen.go_to_house(house=house)
+        citizen.act()
+        print(citizen)

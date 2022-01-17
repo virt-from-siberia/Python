@@ -26,7 +26,7 @@ class Man:
             self.house.food += 10
 
     def eat(self):
-        if self.house.food > 10:
+        if self.house.food <= 10:
             cprint('{} hav been eating'.format(self.name), color="yellow")
             self.fullness += 20
             self.house.food -= 10
@@ -44,7 +44,7 @@ class Man:
 
     def go_to_house(self, house):
         self.house = house
-        print('{} enter the home'.format(self.name))
+        cprint('{} enter the home'.format(self.name), color="cyan")
         self.fullness -= 10
 
     def act(self):
@@ -66,14 +66,22 @@ class House:
         self.food = 10
         self.money = 50
 
+    def __str__(self):
+        return 'In my house eat : {}, money : {}'.format(self.food, self.money)
+
 
 man = Man(name='Valusa')
 beavis = Man(name='Bivis')
-badhear = Man(name='Badhead')
+badhead = Man(name='Badhead')
+
+house = House()
+
+beavis.go_to_house(house)
+badhead.go_to_house(house)
 
 for day in range(1, 21):
     print('============= day : {} ============'.format(day))
     beavis.act()
-    badhear.act()
+    badhead.act()
     print(beavis)
-    print(badhear)
+    print(badhead)

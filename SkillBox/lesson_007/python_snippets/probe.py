@@ -80,9 +80,12 @@ citizens = [
 
 house = House()
 
+for citizen in citizens:
+    citizen.go_to_house(house=house)
+
 for day in range(1, 21):
     print('============= day : {} ============'.format(day))
     for citizen in citizens:
-        citizen.go_to_house(house=house)
+
         citizen.act()
         print(citizen)

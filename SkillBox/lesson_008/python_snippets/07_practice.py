@@ -44,33 +44,24 @@ class Warehouse:
         self.name = name
         self.content = content
         self.road_out = None
-        self.queue_in = []
-        self.queue_out = []
 
     def __str__(self):
-        return 'Склад {} груза {}'.format(self.name, self.content)
+        return 'склад {} груза {}'.format(self.name, self.content)
 
     def set_road_out(self, road):
         self.road_out = road
 
     def truck_arrived(self, truck):
-        self.queue_in.append(truck)
-        truck.place = self
-        print('{} прибыл грузовик {} '.format(self.name, truck))
+        pass
 
     def get_next_truck(self):
-        if self.queue_in:
-            truck = self.queue_in.pop()
-            return truck
+        pass
 
     def truck_ready(self, truck):
-        self.queue_out.append(truck)
-        print('{} грузовик готов {} '.format(self.name, truck))
+        pass
 
     def act(self):
-        while self.queue_out:
-            truck = self.queue_out.pop()
-            truck.go_to(road=self.road_out)
+        pass
 
 
 class Vehicle:
@@ -137,13 +128,33 @@ class AutoLoader(Vehicle):
         return res + 'грузим {}'.format(self.truck)
 
     def act(self):
-        pass
+        if self.fuel <= 10:
+            self.tank_up()
+        elif self.truck is None:
+            self.truck = self.warehouse.get_next_truck()
+        elif self.role == 'loader':
+            self.load()
+        else:
+            self.unload()
 
     def load(self):
-        pass
+        track_cargo_rest = self.truck.body_space - self.truck.cargo
+        if track_cargo_rest >= self.bucket_capacity:
+            self.warehouse.content -= self.bucket_capacity
+            self.truck.cargo += self.bucket_capacity
+
+        else:
+            self.warehouse.content -= self.bucket_capacity
+            self.truck.cargo += track_cargo_rest
 
     def unload(self):
-        pass
+        if self.truck.cargo >= self.bucket_capacity:
+            self.truck.cargo -= self.bucket_capacity
+            self.warehouse.content += self.bucket_capacity
+
+        else:
+            self.truck.cargo -= self.bucket_capacity
+            self.warehouse.content += self.truck.cargo
 
 
 TOTAL_CARGO = 100000

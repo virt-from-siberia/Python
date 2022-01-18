@@ -44,6 +44,8 @@ class Warehouse:
         self.name = name
         self.content = content
         self.road_out = None
+        self.queue_in = []
+        self.queue_out = []
 
     def __str__(self):
         return 'склад {} груза {}'.format(self.name, self.content)
@@ -52,16 +54,20 @@ class Warehouse:
         self.road_out = road
 
     def truck_arrived(self, truck):
-        pass
+        self.queue_in.append(truck)
+        print('{} прибыл грузовик {}'.format(self.name, truck))
 
     def get_next_truck(self):
         pass
 
     def truck_ready(self, truck):
-        pass
+        self.queue_out.append(truck)
+        print('{} грузоки готов {}'.format(self.name, truck))
 
     def act(self):
-        pass
+        while self.queue_out:
+            truck = self.queue_out.pop()
+            truck.go_to(road=self.road_out)
 
 
 class Vehicle:

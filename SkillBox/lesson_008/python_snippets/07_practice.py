@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 from random import randint
 from termcolor import cprint
 
@@ -48,21 +46,24 @@ class Warehouse:
         self.queue_out = []
 
     def __str__(self):
-        return 'склад {} груза {}'.format(self.name, self.content)
+        return 'Склад {} груза {}'.format(self.name, self.content)
 
     def set_road_out(self, road):
         self.road_out = road
 
     def truck_arrived(self, truck):
         self.queue_in.append(truck)
-        print('{} прибыл грузовик {}'.format(self.name, truck))
+        truck.place = self
+        print('{} прибыл грузовик {} '.format(self.name, truck))
 
     def get_next_truck(self):
-        pass
+        if self.queue_in:
+            truck = self.queue_in.pop()
+            return truck
 
     def truck_ready(self, truck):
         self.queue_out.append(truck)
-        print('{} грузоки готов {}'.format(self.name, truck))
+        print('{} грузовик готов {} '.format(self.name, truck))
 
     def act(self):
         while self.queue_out:
@@ -134,33 +135,13 @@ class AutoLoader(Vehicle):
         return res + 'грузим {}'.format(self.truck)
 
     def act(self):
-        if self.fuel <= 10:
-            self.tank_up()
-        elif self.truck is None:
-            self.truck = self.warehouse.get_next_truck()
-        elif self.role == 'loader':
-            self.load()
-        else:
-            self.unload()
+        pass
 
     def load(self):
-        track_cargo_rest = self.truck.body_space - self.truck.cargo
-        if track_cargo_rest >= self.bucket_capacity:
-            self.warehouse.content -= self.bucket_capacity
-            self.truck.cargo += self.bucket_capacity
-
-        else:
-            self.warehouse.content -= self.bucket_capacity
-            self.truck.cargo += track_cargo_rest
+        pass
 
     def unload(self):
-        if self.truck.cargo >= self.bucket_capacity:
-            self.truck.cargo -= self.bucket_capacity
-            self.warehouse.content += self.bucket_capacity
-
-        else:
-            self.truck.cargo -= self.bucket_capacity
-            self.warehouse.content += self.truck.cargo
+        pass
 
 
 TOTAL_CARGO = 100000

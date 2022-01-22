@@ -13,7 +13,7 @@ for dirpath, dirnames, filenames in os.walk(path):
     print(dirpath, dirnames, filenames)
 
 # В разных ОС путь записывается по разному: привести к нужному в этой ОС виду
-os.path.normpath(path)
+os. .normpath(path)
 
 # Получить размер файла.
 os.path.getsize(path)

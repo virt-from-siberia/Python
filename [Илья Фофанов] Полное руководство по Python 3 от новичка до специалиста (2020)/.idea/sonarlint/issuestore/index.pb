@@ -13,15 +13,11 @@ v
 FCode/03-Collections, loops and logic in Python/12-Game In Sticks.ipynb,b\8\b8f846a6d18f613f30721d23734ffdcc68d3e8fe
 <
 1/01_Math.py,3\6\36d2d2133bce2318f0aaf1e77c4759daea761241
-7
-main.py,f\1\f1bdda93d9a278e358509d498e17d97764c1fb29
 A
 1/04_variables.py,7\3\7318d7c58167af1b8e7d0556ff0bc68a9d29ed2b
->
-1/07_string.py,a\8\a899185c0c34df58286423c102a59f59e103b63d
-A
-1/06_bool_none.py,8\4\84280fbc01aa90487f4afda75e7af8824c621ea5
 @
 1/string_func.py,5\3\534511d3a66c7de639b3771893157eedf162f574
+A
+1/06_bool_none.py,8\4\84280fbc01aa90487f4afda75e7af8824c621ea5
 H
 1/10_string_formating.py,f\5\f5b767f38c6902257aa41987505fc143244a1810

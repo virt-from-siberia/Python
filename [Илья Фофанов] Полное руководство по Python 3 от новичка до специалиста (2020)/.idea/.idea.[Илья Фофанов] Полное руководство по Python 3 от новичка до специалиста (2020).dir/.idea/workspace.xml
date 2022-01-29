@@ -19,7 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="217a93f5-2e20-4271-af41-c02b07721ff6" name="Default Changelist" comment="" />
+    <list default="true" id="217a93f5-2e20-4271-af41-c02b07721ff6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/[Илья Фофанов] Полное руководство по Python 3 от новичка до специалиста (2020).iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/[Илья Фофанов] Полное руководство по Python 3 от новичка до специалиста (2020).iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5/01_exeption.py" beforeDir="false" afterPath="$PROJECT_DIR$/5/01_exeption.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ticket.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Ticket.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,17 +41,25 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="217a93f5-2e20-4271-af41-c02b07721ff6" name="Default Changelist" comment="" />
       <created>1643037192353</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643037192353</updated>
       <workItem from="1643037195354" duration="22000" />
+      <workItem from="1643403405011" duration="25000" />
     </task>
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -59,6 +71,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

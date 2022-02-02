@@ -18,4 +18,14 @@ A
 @
 1/string_func.py,5\3\534511d3a66c7de639b3771893157eedf162f574
 A
+<<<<<<< HEAD
 1/06_bool_none.py,8\4\84280fbc01aa90487f4afda75e7af8824c621ea5
+=======
+1/06_bool_none.py,8\4\84280fbc01aa90487f4afda75e7af8824c621ea5
+H
+1/10_string_formating.py,f\5\f5b767f38c6902257aa41987505fc143244a1810
+7
+main.py,f\1\f1bdda93d9a278e358509d498e17d97764c1fb29
+<
+3/14_game.py,5\4\5498842bafaf8e2a3106d88c62727e3726aa577a
+>>>>>>> 959cc8fec8e81657848d979edde4bdb5653f3d03

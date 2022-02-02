@@ -15,3 +15,5 @@ while number_of_sticks > 0:
         print(f"not more sticks in the game. \n player {player_turn} has lost")
 
     player_turn = 1 if player_turn == 2 else 2
+
+    

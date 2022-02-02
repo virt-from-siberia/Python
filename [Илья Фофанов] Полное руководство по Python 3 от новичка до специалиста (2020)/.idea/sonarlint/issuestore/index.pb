@@ -19,5 +19,3 @@ A
 1/string_func.py,5\3\534511d3a66c7de639b3771893157eedf162f574
 A
 1/06_bool_none.py,8\4\84280fbc01aa90487f4afda75e7af8824c621ea5
-H
-1/10_string_formating.py,f\5\f5b767f38c6902257aa41987505fc143244a1810

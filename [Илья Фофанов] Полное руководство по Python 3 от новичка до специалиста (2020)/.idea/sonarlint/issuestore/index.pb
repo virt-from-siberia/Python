@@ -1,6 +1,4 @@
 
-7
-main.py,f\1\f1bdda93d9a278e358509d498e17d97764c1fb29
 D
 1/13_string_bites.py,e\1\e18e0a626996ebf6d10fce09cc3b357c7d219b08
 <
@@ -29,20 +27,14 @@ D
 3/10_while_contin.py,3\7\376e23a39c0671c57b024e99457e427e6421270b
 G
 1/11_equals_operator.py,0\7\078a44ea71019d6b87b43e3bdae6fe5439644754
-<
-3/14_game.py,5\4\5498842bafaf8e2a3106d88c62727e3726aa577a
 H
 1/10_string_formating.py,f\5\f5b767f38c6902257aa41987505fc143244a1810
->
-8/05_pickle.py,8\1\8138763f04e66b6b61c56f9b1df60d1890806b67
 B
 8/11_intertools.py,8\c\8cb4e54ec75a483fb1f15be5a17fcd14fee01b62
 B
 8/10_generators.py,a\8\a84e7093ee7aea397f18459a959a90e72bc918bb
 <
 8/09_JSON.py,0\c\0c74206fd525adfe7b68164b6ea6b76cb0e7305d
-=
-8/02_stack.py,6\6\663c6ceb4610046da852fb036a7b74cb4d102b25
 I
 8/07_deep_shallow_copy.py,1\5\152435a9dcfe2df46c488038c7c3a0e8a0365644
 <
@@ -55,3 +47,11 @@ E
 8/12_interspection.py,3\1\313c3904f5f9690125d99aeb323c1cf2ec3c195a
 G
 8/13_module_requests.py,c\8\c8d5db8491fdd430006ee21f170d9385b7802092
+>
+8/14_memory.py,4\5\452c44dabe72165a307ffb443f2a72b238659366
+F
+6/04_static_methods.py,3\3\33799be3ec61e0a3742a7b84cd4a5f1f6b4bd83a
+=
+8/02_stack.py,6\6\663c6ceb4610046da852fb036a7b74cb4d102b25
+D
+3/14_game_in_func.py,f\8\f8c25bc8bd79b9861c3cafdc37581015b18c4d29

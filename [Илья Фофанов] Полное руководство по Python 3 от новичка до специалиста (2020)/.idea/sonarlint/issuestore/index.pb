@@ -7,9 +7,6 @@ D
 3/01_list.py,4\9\49d9ba5a45c76c74068f4c124f9934fc2cae06e2
 <
 3/02_dict.py,a\d\ad9071db6f4a4034acdf62eb6e3b4a36d59ca459
-:
-
-Ticket.txt,7\6\767c0d5e1eba34de3b96691e7b42b9e9d0cee88b
 D
 3/03_ordered_dict.py,f\6\f63a72520c041d90c9999edefa7a44542ded0e78
 >
@@ -32,7 +29,29 @@ D
 3/10_while_contin.py,3\7\376e23a39c0671c57b024e99457e427e6421270b
 G
 1/11_equals_operator.py,0\7\078a44ea71019d6b87b43e3bdae6fe5439644754
-H
-1/10_string_formating.py,f\5\f5b767f38c6902257aa41987505fc143244a1810
 <
 3/14_game.py,5\4\5498842bafaf8e2a3106d88c62727e3726aa577a
+H
+1/10_string_formating.py,f\5\f5b767f38c6902257aa41987505fc143244a1810
+>
+8/05_pickle.py,8\1\8138763f04e66b6b61c56f9b1df60d1890806b67
+B
+8/11_intertools.py,8\c\8cb4e54ec75a483fb1f15be5a17fcd14fee01b62
+B
+8/10_generators.py,a\8\a84e7093ee7aea397f18459a959a90e72bc918bb
+<
+8/09_JSON.py,0\c\0c74206fd525adfe7b68164b6ea6b76cb0e7305d
+=
+8/02_stack.py,6\6\663c6ceb4610046da852fb036a7b74cb4d102b25
+I
+8/07_deep_shallow_copy.py,1\5\152435a9dcfe2df46c488038c7c3a0e8a0365644
+<
+8/08_enum.py,1\4\1479f607536bfdba79ea941cc1820e708f86ab15
+f
+6Code/02-Python Basics/01-Numbers and Simple Math.ipynb,f\c\fcd1e3c2271075acf414cc418e8b815e1cf682fc
+@
+8/03_datatime.py,a\9\a98f4a3546fe23be86fd0e94bba69e4e3f19ea9c
+E
+8/12_interspection.py,3\1\313c3904f5f9690125d99aeb323c1cf2ec3c195a
+G
+8/13_module_requests.py,c\8\c8d5db8491fdd430006ee21f170d9385b7802092

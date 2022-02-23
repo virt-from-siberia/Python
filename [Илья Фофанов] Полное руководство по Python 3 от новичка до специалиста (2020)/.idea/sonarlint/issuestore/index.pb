@@ -47,11 +47,7 @@ E
 8/12_interspection.py,3\1\313c3904f5f9690125d99aeb323c1cf2ec3c195a
 G
 8/13_module_requests.py,c\8\c8d5db8491fdd430006ee21f170d9385b7802092
->
-8/14_memory.py,4\5\452c44dabe72165a307ffb443f2a72b238659366
 F
 6/04_static_methods.py,3\3\33799be3ec61e0a3742a7b84cd4a5f1f6b4bd83a
-=
-8/02_stack.py,6\6\663c6ceb4610046da852fb036a7b74cb4d102b25
 D
 3/14_game_in_func.py,f\8\f8c25bc8bd79b9861c3cafdc37581015b18c4d29

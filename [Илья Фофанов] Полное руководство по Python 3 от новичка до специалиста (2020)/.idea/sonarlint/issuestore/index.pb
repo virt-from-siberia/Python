@@ -65,8 +65,3 @@ W
 '9/12_homework/true_or_false/question.py,7\f\7fe00e90e93f184c18bff39b810fc4b7fd4b152b
 >
 8/14_memory.py,4\5\452c44dabe72165a307ffb443f2a72b238659366
-:
-
-Ticket.txt,7\6\767c0d5e1eba34de3b96691e7b42b9e9d0cee88b
-S
-#9/12_homework/true_or_false/game.py,2\c\2cc0e7ab5181bce3f47aa4523c68b3d23e1b3cae

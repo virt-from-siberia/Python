@@ -65,3 +65,12 @@ W
 '9/12_homework/true_or_false/question.py,7\f\7fe00e90e93f184c18bff39b810fc4b7fd4b152b
 >
 8/14_memory.py,4\5\452c44dabe72165a307ffb443f2a72b238659366
+X
+(Code/08-Advanced/01-Debug with PDB.ipynb,c\b\cbd19ccd9f5f21d449643d1ce7ed519d18b5cf91
+M
+15/psycopg/adapter_db_test.py,e\c\ecb911b4f8c64f8976530587755abfa1c7cb3a9f
+:
+
+Ticket.txt,7\6\767c0d5e1eba34de3b96691e7b42b9e9d0cee88b
+K
+15/SQLAlchemy/SQLAlchemy.py,e\9\e90f98d81007e324c5b6b36ca5807b04eb23330d

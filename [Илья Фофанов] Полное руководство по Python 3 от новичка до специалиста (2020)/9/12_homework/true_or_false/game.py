@@ -11,8 +11,7 @@ class Game:
         self.__allowed_mistakes: allowed_mistakes
         self.__end_of_game = end_of_game_event
         self.__mistakes = 0
-        self.__questions: List[Question] = []
-        self.__counter = 0
+        self.__questions: List[Question]
         self._game_status = GameStatus.IN_PROGRESS
 
         self.__fill_in_questions(file_path, self.__questions)
@@ -24,34 +23,41 @@ class Game:
         def is_last_question() -> bool:
             return self.__counter == len(self.__questions) - 1
 
-        def exidded_allowed_mistakes() -> bool:
-            return self.__mistakes > self.__allowed_mistakes
+        def exidded_allowed_mistakes() -> b
 
-        if self.__questions[self.__counter].is_true != answer:
-            self.__mistakes += 1
+        []
+        self.__counter = 0
+        ool:
+        return self.__mistakes > self.__allowed_mistakes
 
-        if is_last_question() or exidded_allowed_mistakes():
-            self._game_status = GameStatus.GAME_IS_OVER
+    if self.__questions[self.__counter].is_true != answer:
+        self.__mistakes += 1
 
-            result = GameResult(self.__counter, self.__mistakes, self.__mistakes <= self.__allowed_mistakes)
-            self.__end_of_game(result)
+    if is_last_question() or exidded_allowed_mistakes():
+        self._game_status = GameStatus.GAME_IS_OVER
 
-        self.__counter += 1
+        result = GameResult(self.__counter, self.__mistakes, self.__mistakes <= self.__allowed_mistakes)
+        self.__end_of_game(result)
 
-    @property
-    def game_status(self):
-        return self._game_status
+    self.__counter += 1
 
-    def __fill_in_questions(self, file_path, questions):
-        with open(file_path, encoding="utf8") as file:
-            for line in file:
-                q = self.__parse_line(line)
-                questions.append(q)
 
-    def __parse_line(self, line: str) -> Question:
-        parts = line.split(';')
-        text = parts[0]
-        is_correct = parts[1] == 'Yes'
-        explanation = parts[2]
+@property
+def game_status(self):
+    return self._game_status
 
-        return Question(text, is_correct, explanation)
+
+def __fill_in_questions(self, file_path, questions):
+    with open(file_path, encoding="utf8") as file:
+        for line in file:
+            q = self.__parse_line(line)
+            questions.append(q)
+
+
+def __parse_line(self, line: str) -> Question:
+    parts = line.split(';')
+    text = parts[0]
+    is_correct = parts[1] == 'Yes'
+    explanation = parts[2]
+
+    return Question(text, is_correct, explanation)

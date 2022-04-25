@@ -1,0 +1,5 @@
+
+epython:S1192è"LDefine a constant instead of duplicating this literal "admin:index" 3 times.(Şœ±
+qpython:S3776d"TRefactor this function to reduce its Cognitive Complexity from 16 to the 15 allowed.(¼İì›ùÿÿÿÿ
+rpython:S3776Ê"TRefactor this function to reduce its Cognitive Complexity from 22 to the 15 allowed.(ÖÉÎ²şÿÿÿÿ
+wpython:S117Ô"_Rename this local variable "AdminSiteClass" to match the regular expression ^[_a-z][a-z0-9_]*$.(Ò¬Êú

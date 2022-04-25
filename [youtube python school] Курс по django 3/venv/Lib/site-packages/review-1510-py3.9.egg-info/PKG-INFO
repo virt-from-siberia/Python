@@ -1,0 +1,30 @@
+Metadata-Version: 1.1
+Name: review
+Version: 1510
+Summary: upload script for Rietveld code review tool
+Home-page: http://codereview.appspot.com/
+Author: Google Inc. & Co.
+Author-email: codereview-discuss@googlegroups.com
+License: Apache 2.0
+Description: 
+        Usage::
+        
+            python -m review [options]
+        
+        Changes:
+        
+         1510:a0a624f - 2015-10-14
+        
+         - Rietveld moved to GitHub, syncing to a0a624f
+        
+        * Rietveld Home Page:   http://codereview.appspot.com/
+        * Rietveld Development: http://code.google.com/p/rietveld/
+        * This script: http://bitbucket.org/techtonik/python-review/
+        * Discussions: http://groups.google.com/group/codereview-discuss/
+        
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities

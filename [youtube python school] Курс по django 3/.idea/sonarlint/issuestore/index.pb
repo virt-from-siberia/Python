@@ -37,10 +37,6 @@ F
 django_movie/manage.py,1\0\1030c4adc1473745d4645b3569ffe90623ed299a
 L
 django_movie/movies/admin.py,9\b\9b775d0f96befb236823a9fc07ba658aa1d91730
-M
-django_movie/movies/models.py,9\d\9d06bc2d0bc45ad0abfef0f64e7b8b23ad2b3b7c
-]
--django_movie_template-master/moviesingle.html,2\1\2136c37115de5c72d6ea7f4165ce1b6c57f87fb0
 Q
 !django_movie/django_movie/urls.py,3\7\37780d98fe3e2d01706a98ea954b6476031811eb
 Q

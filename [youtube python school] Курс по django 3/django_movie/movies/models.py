@@ -1,8 +1,9 @@
 from django.db import models
 from datetime import date
 
-
 # Create your models here.
+from django.urls import reverse
+
 
 class Category(models.Model):
     name = models.CharField("Категория", max_length=150)
@@ -51,19 +52,28 @@ class Movie(models.Model):
     poster = models.ImageField("Постер", upload_to="movies/")
     year = models.PositiveSmallIntegerField("Дата выхода", default=2019)
     country = models.CharField("Страна", max_length=30)
-    directors = models.ManyToManyField(Actor, verbose_name='режжисер', related_name='film_director')
-    actors = models.ManyToManyField(Actor, verbose_name='актеры', related_name='film_actor')
+    directors = models.ManyToManyField(
+        Actor, verbose_name='режжисер', related_name='film_director')
+    actors = models.ManyToManyField(
+        Actor, verbose_name='актеры', related_name='film_actor')
     genres = models.ManyToManyField(Genre, verbose_name='Жанры')
     word_premiere = models.DateField("Примьера в мире", default=date.today)
-    budget = models.PositiveIntegerField("Бюджет", default=0, help_text='указывать сумму вдолларах')
-    fees_in_usa = models.PositiveIntegerField("Сборы в США", default=0, help_text='указывать сумму вдолларах')
-    fees_in_world = models.PositiveIntegerField("Сборы в мире", default=0, help_text='указывать сумму вдолларах')
-    category = models.ForeignKey(Category, verbose_name='Категория', on_delete=models.SET_NULL, null=True)
+    budget = models.PositiveIntegerField(
+        "Бюджет", default=0, help_text='указывать сумму вдолларах')
+    fees_in_usa = models.PositiveIntegerField(
+        "Сборы в США", default=0, help_text='указывать сумму вдолларах')
+    fees_in_world = models.PositiveIntegerField(
+        "Сборы в мире", default=0, help_text='указывать сумму вдолларах')
+    category = models.ForeignKey(
+        Category, verbose_name='Категория', on_delete=models.SET_NULL, null=True)
     url = models.SlugField(max_length=130, unique=True)
     draft = models.BooleanField("Черновик", default=False)
 
     def __str__(self):
         return self.title
+
+    def get_absolute_url(self):
+        return reverse("movie_detail", kwargs={"slug": self.url})
 
     class Meta:
         verbose_name = 'Фильм'
@@ -74,7 +84,8 @@ class MovieShots(models.Model):
     title = models.CharField("Заголовок", max_length=100)
     description = models.TextField("Описание", max_length=5000)
     image = models.ImageField("Изображение", upload_to='movie_shots/')
-    movie = models.ForeignKey(Movie, verbose_name='Фильм', on_delete=models.CASCADE)
+    movie = models.ForeignKey(
+        Movie, verbose_name='Фильм', on_delete=models.CASCADE)
 
     def __str__(self):
         return self.title
@@ -97,8 +108,10 @@ class RatingStar(models.Model):
 
 class Rating(models.Model):
     ip = models.CharField("IP адрес", max_length=15)
-    star = models.ForeignKey(RatingStar, on_delete=models.CASCADE, verbose_name='Звезда')
-    movie = models.ForeignKey(Movie, on_delete=models.CASCADE, verbose_name='Фильм')
+    star = models.ForeignKey(
+        RatingStar, on_delete=models.CASCADE, verbose_name='Звезда')
+    movie = models.ForeignKey(
+        Movie, on_delete=models.CASCADE, verbose_name='Фильм')
 
     def __str__(self):
         return f"{self.star} - f{self.movie}"
@@ -112,8 +125,10 @@ class Reviews(models.Model):
     email = models.EmailField()
     name = models.CharField("Имя", max_length=100)
     text = models.TextField("Сообшение", max_length=5000)
-    parent = models.ForeignKey('self', verbose_name="Родитель", on_delete=models.SET_NULL, blank=True, null=True)
-    movie = models.ForeignKey(Movie, verbose_name="Фильм", on_delete=models.CASCADE)
+    parent = models.ForeignKey(
+        'self', verbose_name="Родитель", on_delete=models.SET_NULL, blank=True, null=True)
+    movie = models.ForeignKey(
+        Movie, verbose_name="Фильм", on_delete=models.CASCADE)
 
     def __str__(self):
         return f"{self.name} - f{self.movie}"

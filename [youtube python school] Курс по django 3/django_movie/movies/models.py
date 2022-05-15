@@ -20,7 +20,7 @@ class Category(models.Model):
 
 class Actor(models.Model):
     name = models.CharField("Имя", max_length=150)
-    age = models.PositiveSmallIntegerField("Возрас", default=0)
+    age = models.PositiveSmallIntegerField("Возраст", default=0)
     description = models.TextField("Описание", max_length=5000)
     image = models.ImageField("Изображение", upload_to="actors/")
 

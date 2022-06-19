@@ -25,6 +25,10 @@ class AddReviewView(View):
 
         if form.is_valid():
             form = form.save(commit=False)
+
+            if request.POST.get("parent", None):
+                form.parent_id = int(request.POST.get("parent"))
+
             form.movie = movie
             form.save()
 

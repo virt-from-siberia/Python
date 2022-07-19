@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="db" uuid="1550c921-dee8-4f10-8f38-9f6439623a34">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:J:\PROGRAMMING\WEB\GIT\LEARNING\Python\[youtube python school] Курс по django 3\django_movie\db.sqlite3</jdbc-url>
+    </data-source>
+  </component>
+</project>

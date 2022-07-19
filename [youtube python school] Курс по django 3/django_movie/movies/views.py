@@ -7,7 +7,7 @@ from django.views import View
 from django.views.generic import ListView, DetailView
 
 from .models import Movie, Actor, Genre
-from .forms import ReviewForm
+from .forms import ReviewForm, RatingForm
 
 
 class GenreYear:
@@ -28,6 +28,11 @@ class MoviesView(GenreYear, ListView):
 class MovieDetailView(GenreYear, DetailView):
     model = Movie
     slug_field = 'url'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["star_form"] = RatingForm()
+        return context
 
 
 class AddReviewView(View):

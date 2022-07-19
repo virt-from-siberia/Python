@@ -59,6 +59,10 @@
                     </li>
                     <li style="list-style: none"><span><b>Сборы в мире:</b> {{ movie.fees_in_world }} </span>
                     </li>
+
+
+                    <form action="{% url 'add rating' %}"></form>
+
                     <li style="list-style: none">
                         <a href="#"><b>Рейтинг:</b>
                             <span class="fa fa-star" aria-hidden="true" style="outline: none; cursor: inherit;"></span>
@@ -69,6 +73,7 @@
                             <span class="editContent" style="outline: none; cursor: inherit;">5.0</span>
                         </a>
                     </li>
+
                     <div class="share-desc">
                         <div class="share">
                             <h4 class="editContent" style="outline: none; cursor: inherit;">

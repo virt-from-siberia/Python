@@ -5,8 +5,6 @@ H
 static/css/bootstrap.css,4\2\42191ef3d936ed2bda6993a73206de85ff961151
 M
 templates/include/header.html,6\4\6456f97bad132191cf3afc51d4353332c1a948f2
-?
-movies/forms.py,6\1\6142e8385903d18bd9261243f78ec60c5b872c79
 :
 
 db.sqlite3,9\0\907ac5e500f6286c18519bf943721af4c97e50d5
@@ -30,9 +28,11 @@ D
 django_movie/wsgi.py,e\9\e9149afb4ace3da6279deabf55d90d62d587c527
 R
 "templates/movies/movie_detail.html,f\7\f7e9eb17dea939701b17b660e3c1766075eb1e49
+@
+movies/models.py,a\d\adc9e4d2cf55d595712cf06ac68fa10fe7a102d9
 >
 movies/urls.py,c\a\ca016decb7b2463b29c3322b2922ea16ee12c587
 ?
+movies/forms.py,6\1\6142e8385903d18bd9261243f78ec60c5b872c79
+?
 movies/views.py,9\b\9bb8c93b39e6eef2f60f48343e5ca16cbb91d606
-@
-movies/models.py,a\d\adc9e4d2cf55d595712cf06ac68fa10fe7a102d9

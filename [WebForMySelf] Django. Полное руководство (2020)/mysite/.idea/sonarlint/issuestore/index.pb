@@ -23,16 +23,11 @@ B
 mysite/__init__.py,8\7\87f663140537015b699bf7e6212b9e7f40799879
 >
 mysite/urls.py,f\6\f654c03fc6faff72cb0bb91ef53db408616d5ced
->
-news/models.py,9\2\921bf4431b113e1037649429d6ac84d0283e04bb
-:
-
-TICKET.txt,1\a\1a951a341d174111c6e5f312eb2ae210b4b16826
-=
-news/views.py,b\b\bb0dbcc48348a42389b138c97ef7d3505d659c43
+u
+Evenv/Lib/site-packages/django/contrib/admin/static/admin/css/base.css,f\3\f3ba580b2bb6c73a6b39ee9380c8c38377722e06
+N
+news/templates/admin/base.html,c\b\cb5ffb6c5abd2b7cb5155279055e1d998afa9463
 B
 mysite/settings.py,b\b\bb3f47c4f7ceace66cc99cfd701d7c467df2d27a
-N
-news/templates/news/index.html,4\6\462b35ae6b7d8b905d44f22b4194913de5c37a12
 <
 news/urls.py,f\a\fab70dc7ac7865019e09bf9bad7ebde2a8285e64

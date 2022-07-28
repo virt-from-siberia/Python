@@ -5,7 +5,6 @@ import django.db.models.deletion
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
         ('news', '0002_alter_news_options_alter_news_content_and_more'),
     ]

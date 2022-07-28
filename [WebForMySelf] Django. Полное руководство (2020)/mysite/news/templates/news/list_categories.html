@@ -1,0 +1,13 @@
+<div class="list-group">
+    <a href="/news" class="list-group-item list-group-item-action"
+       aria-current="true">
+        Все
+    </a>
+    {% for item in categories %}
+        <a href="{{ item.get_absolute_url }}"
+           class="list-group-item list-group-item-action"
+           aria-current="true">
+            {{ item.title }}
+        </a>
+    {% endfor %}
+</div>

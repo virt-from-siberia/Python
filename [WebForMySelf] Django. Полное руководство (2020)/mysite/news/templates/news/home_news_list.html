@@ -1,15 +1,11 @@
 {% extends 'base.html' %}
 
 {% block title %}
-    {{ category.title }} :: {{ block.super }}
+    {{ title }} :: {{ block.suser }}
 {% endblock %}
 
-
-
 {% block  sidebar %}
-
     {% include 'inc/_sidebar.html' %}
-
 {% endblock %}
 
 {% block  content %}
@@ -31,11 +27,10 @@
                 <div class="media-body">
                     <h5 class="card-title {% cycle 'text-danger' ' text-success' %}">{{ item.title }}</h5>
                     {% autoescape off %}
-                        <p class="card-text">{{ item.content|safe|linebreaks|truncatewords:50 }}</p>
+                        <p class="card-text">{{ item.content }}</p>
                     {% endautoescape %}
-                    <a href="{{ item.get_absolute_url }}" class="btn btn-primary">read more!</a>
+                    <a href="{{ item.get_absolute_url }}" class="btn btn-primary">read more</a>
                 </div>
-
             </div>
             <div class="card-footer text-muted">
                 {{ item.created_at|date:"Y-m-d H:i" }}

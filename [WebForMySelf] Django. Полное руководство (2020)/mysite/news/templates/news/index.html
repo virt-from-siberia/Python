@@ -17,20 +17,18 @@
                 Категория : {{ item.category }}
             </div>
             <div class="card-body">
-                <div class="media">
-                    {% if item.photo %}
-                        <img src="{{ item.photo.url }}" alt="" width="300" class="mr-3">
-                    {% else %}
-                        <img src="https://серебро.рф/img/placeholder.png"
-                             alt="" style="width: 150px; height: 150px">
-                    {% endif %}
-                    <div class="media-body">
-                        <h5 class="card-title {% cycle 'text-danger' ' text-success' %}">{{ item.title }}</h5>
-                        {% autoescape off %}
-                            <p class="card-text">{{ item.content }}</p>
-                        {% endautoescape %}
-                        <a href="{{ item.get_absolute_url }}" class="btn btn-primary">read more</a>
-                    </div>
+                {% if item.photo %}
+                    <img src="{{ item.photo.url }}" alt="" width="300" class="mr-3 float-left">
+                {% else %}
+                    <img src="https://серебро.рф/img/placeholder.png"
+                         alt="" style="width: 150px; height: 150px" class="mr-3 float-left">
+                {% endif %}
+                <div class="media-body">
+                    <h5 class="card-title {% cycle 'text-danger' ' text-success' %}">{{ item.title }}</h5>
+                    {% autoescape off %}
+                        <p class="card-text">{{ item.content }}</p>
+                    {% endautoescape %}
+                    <a href="{{ item.get_absolute_url }}" class="btn btn-primary">read more</a>
                 </div>
             </div>
             <div class="card-footer text-muted">

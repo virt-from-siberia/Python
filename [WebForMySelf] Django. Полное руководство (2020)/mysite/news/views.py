@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404, redirect
-from django.views.generic import ListView
+from django.views.generic import ListView, DetailView
 from .models import News, Category
 from .forms import NewsForm
 
@@ -42,19 +42,26 @@ class NewsByCategory(ListView):
 #     return render(request, template_name='news/index.html', context=context)
 
 
-def get_category(request, category_id):
-    news = News.objects.filter(category_id=category_id)
-    category = Category.objects.get(pk=category_id)
-    context = {'news': news, 'title': 'Список новостей', 'category': category}
+# def get_category(request, category_id):
+#     news = News.objects.filter(category_id=category_id)
+#     category = Category.objects.get(pk=category_id)
+#     context = {'news': news, 'title': 'Список новостей', 'category': category}
+#
+#     return render(request, template_name='news/category.html', context=context)
 
-    return render(request, template_name='news/category.html', context=context)
+
+# def view_news(request, news_id):
+#     news_item = get_object_or_404(News, pk=news_id)
+#     print('news_item', news_item)
+#
+#     return render(request, 'news/view_news.html', {"news_item": news_item})
 
 
-def view_news(request, news_id):
-    news_item = get_object_or_404(News, pk=news_id)
-    print('news_item', news_item)
-
-    return render(request, 'news/view_news.html', {"news_item": news_item})
+class ViewNews(DetailView):
+    model = News
+    template_name = 'news/news_detail.html'
+    context_object_name = 'news_item'
+    # pk_url_kwarg = 'news_id'
 
 
 def add_news(request):

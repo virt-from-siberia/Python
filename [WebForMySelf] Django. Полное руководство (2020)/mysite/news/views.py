@@ -67,8 +67,8 @@ class ViewNews(DetailView):
 
 class CreateNews(CreateView):
     form_class = NewsForm
-    # template_name = 'news/add-news.html'
-    # success_url = reverse_lazy('home')
+    template_name = 'news/add-news.html'
+    success_url = reverse_lazy('home')
 
 # def add_news(request):
 #     if request.method == 'POST':

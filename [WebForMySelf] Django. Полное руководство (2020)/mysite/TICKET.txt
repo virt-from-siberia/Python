@@ -1,1 +1,4 @@
-39 video begin
+42 video begin
+
+django-debug-toolbar
+django-grappelli

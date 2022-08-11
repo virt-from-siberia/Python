@@ -1,4 +1,6 @@
-42 video begin
+46 video begin
 
 django-debug-toolbar
 django-grappelli
+Pillow 
+django

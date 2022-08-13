@@ -23,7 +23,7 @@ def register(request):
             messages.success(request, 'Вы успешно зарегиестрировались')
             return redirect('home')
         else:
-            messages.error(request, 'Ошибка регистрации')
+            messages.error(request, 'Ошибка валидации')
     else:
         form = UserRegisterForm()
     return render(request, 'news/register.html', {"form": form})
@@ -46,7 +46,7 @@ def user_logout(request):
     return redirect('login')
 
 
-def test(request):
+def contact(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
@@ -54,7 +54,7 @@ def test(request):
                              ['alonso85@mail.ru', 'virtyoz777@gmail.com'], fail_silently=False)
             if mail:
                 messages.success(request, 'Письмо отправлено!')
-                return redirect('test')
+                return redirect('contact')
             else:
                 messages.error(request, 'Ошибка отправки')
         else:

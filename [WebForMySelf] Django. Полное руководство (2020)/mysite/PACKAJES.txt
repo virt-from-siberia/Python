@@ -1,0 +1,6 @@
+django-debug-toolbar
+django-grappelli
+Pillow 
+django
+django-ckeditor
+django-simple-captcha

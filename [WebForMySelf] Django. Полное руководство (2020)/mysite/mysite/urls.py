@@ -21,6 +21,7 @@ from django.urls import path, include
 urlpatterns = [
     path('grappelli/', include('grappelli.urls')),
     path('ckeditor/', include('ckeditor_uploader.urls')),
+    path('captcha/', include('captcha.urls')),
     path('admin/', admin.site.urls),
     path('', include('news.urls')),
 ]

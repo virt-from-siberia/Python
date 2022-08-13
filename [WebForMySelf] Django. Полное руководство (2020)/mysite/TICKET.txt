@@ -1,7 +1,2 @@
-50 video begin
+51 video begin
 
-django-debug-toolbar
-django-grappelli
-Pillow 
-django
-django-ckeditor

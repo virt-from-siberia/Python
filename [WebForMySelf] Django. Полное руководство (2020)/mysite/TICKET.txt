@@ -1,6 +1,7 @@
-48 video begin
+50 video begin
 
 django-debug-toolbar
 django-grappelli
 Pillow 
 django
+django-ckeditor

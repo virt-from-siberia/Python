@@ -1,2 +1,4 @@
 Pillow 
 django
+django-debug-toolbar
+django-ckeditor

@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block title %} {{ title }} :: {{ block.super }} {% endblock %}
+
 {% block content %}
 
     <section class="bg-text-area">
@@ -37,121 +39,66 @@
                                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.eiusmod tempor
                                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                                 <h4><span class="date">25 February 2017</span><span class="author">Posted By: <span
-                                        class="author-name">Kabbo Liate</span></span>
+                                    class="author-name">Kabbo Liate</span></span>
                                 </h4>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="single-post">
-                            <img src="{% static 'img/post-image2.jpg' %}" alt="">
-                            <h3><a href="#">Post Title Goes Here.</a></h3>
-                            <h4><span>Posted By: <span class="author-name">Kabbo Liate</span></span>
-                            </h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dotempor incididunt ut.
-                                labore
-                                et dolore magna aliqua. Ut enim ad minim veniam</p>
-                            <h4><span>25 February 2017</span></h4>
+
+
+                    {% for post in posts %}
+
+                        <div class="col-md-3">
+                            <div class="single-post">
+
+                                {% if post.photo %}
+                                    <img src="{{ post.photo.url }}" alt="">
+                                {% else %}
+                                    <img src="https://cdn.mos.cms.futurecdn.net/AT9Bcvo94cTMGmESvL4JCK.jpg" alt="">
+                                {% endif %}
+
+
+                                <h3><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h3>
+                                <h4><span>Posted By: <span class="author-name">{{ post.author }}</span></span>
+                                </h4>
+                                <p>{{ post.content|truncatechars_html:70|safe }}</p>
+                                <h4><span>{{ post.created_at|date:"d.m.Y" }}</span></h4>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="single-post">
-                            <img src="{% static 'img/post-image3.jpg' %}" alt="">
-                            <h3><a href="#">Post Title Goes Here.</a></h3>
-                            <h4><span>Posted By: <span class="author-name">Kabbo Liate</span></span>
-                            </h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dotempor incididunt ut.
-                                labore
-                                et dolore magna aliqua. Ut enim ad minim veniam</p>
-                            <h4><span>25 February 2017</span></h4>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="single-post">
-                            <img src="{% static 'img/post-image4.jpg' %}" alt="">
-                            <h3><a href="#">Post Title Goes Here.</a></h3>
-                            <h4><span>Posted By: <span class="author-name">Kabbo Liate</span></span>
-                            </h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dotempor incididunt ut.
-                                labore
-                                et dolore magna aliqua. Ut enim ad minim veniam</p>
-                            <h4><span>25 February 2017</span></h4>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="single-post">
-                            <img src="{% static 'img/post-image5.jpg' %}" alt="">
-                            <h3><a href="#">Post Title Goes Here.</a></h3>
-                            <h4><span>Posted By: <span class="author-name">Kabbo Liate</span></span>
-                            </h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dotempor incididunt ut.
-                                labore
-                                et dolore magna aliqua. Ut enim ad minim veniam</p>
-                            <h4><span>25 February 2017</span></h4>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="single-post">
-                            <img src="{% static 'img/post-image6.jpg' %}" alt="">
-                            <h3><a href="#">Post Title Goes Here.</a></h3>
-                            <h4><span>Posted By: <span class="author-name">Kabbo Liate</span></span>
-                            </h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dotempor incididunt ut.
-                                labore
-                                et dolore magna aliqua. Ut enim ad minim veniam</p>
-                            <h4><span>25 February 2017</span></h4>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="single-post">
-                            <img src="{% static 'img/post-image7.jpg' %}" alt="">
-                            <h3><a href="#">Post Title Goes Here.</a></h3>
-                            <h4><span>Posted By: <span class="author-name">Kabbo Liate</span></span>
-                            </h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dotempor incididunt ut.
-                                labore
-                                et dolore magna aliqua. Ut enim ad minim veniam</p>
-                            <h4><span>25 February 2017</span></h4>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="single-post">
-                            <img src="{% static 'img/post-image8.jpg' %}" alt="">
-                            <h3><a href="#">Post Title Goes Here.</a></h3>
-                            <h4><span>Posted By: <span class="author-name">Kabbo Liate</span></span>
-                            </h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dotempor incididunt ut.
-                                labore
-                                et dolore magna aliqua. Ut enim ad minim veniam</p>
-                            <h4><span>25 February 2017</span></h4>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="single-post">
-                            <img src="{% static 'img/post-image9.jpg' %}" alt="">
-                            <h3><a href="#">Post Title Goes Here.</a></h3>
-                            <h4><span>Posted By: <span class="author-name">Kabbo Liate</span></span>
-                            </h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dotempor incididunt ut.
-                                labore
-                                et dolore magna aliqua. Ut enim ad minim veniam</p>
-                            <h4><span>25 February 2017</span></h4>
-                        </div>
-                    </div>
+
+                    {% endfor %}
+
                 </div>
             </div>
         </div>
-        <div class="pegination">
 
-            <div class="nav-links">
-                <span class="page-numbers current">1</span>
-                <a class="page-numbers" href="#">2</a>
-                <a class="page-numbers" href="#">3</a>
-                <a class="page-numbers" href="#">4</a>
-                <a class="page-numbers" href="#">5</a>
-                <a class="page-numbers" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+        {% if page_obj.has_other_pages %}
+            <div class="pegination">
+                <div class="nav-links">
+
+                    {% if page_obj.has_previous %}
+                        <a class="page-numbers" href="?page={{ page_obj.previous_page_number }}">
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        </a>
+                    {% endif %}
+
+                    {% for p in page_obj.paginator.page_range %}
+                        {% if page_obj.number == p %}
+                            <span class="page-numbers current">{{ p }}</span>
+                        {% elif p > page_obj.number|add:-3 and p < page_obj.number|add:3 %}
+                            <a class="page-numbers" href="?page={{ p }}">{{ p }}</a>
+                        {% endif %}
+                    {% endfor %}
+
+                    {% if page_obj.has_next %}
+                        <a class="page-numbers" href="?page={{ page_obj.next_page_number }}"><i
+                            class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    {% endif %}
+
+                </div>
             </div>
-        </div>
+        {% endif %}
+
     </section>
 
 {% endblock %}

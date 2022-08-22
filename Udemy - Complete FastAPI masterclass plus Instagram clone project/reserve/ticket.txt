@@ -1,0 +1,4 @@
+7 - 12 video begin
+
+start:
+uvicorn main:app --reload

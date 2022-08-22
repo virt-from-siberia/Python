@@ -1,1 +1,3 @@
-7 - 12 video begin
+7 - 12 video 27 minutes
+
+uvicorn main:app --reload 

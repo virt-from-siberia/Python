@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3e2b03fb-8479-4704-b659-aaffdcaebf0c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/d0e95c79-4075-4943-9f56-86b73ea69b22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/db_article.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fastapi-test.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reserve/.idea/Udemy - Complete FastAPI masterclass plus Instagram clone project.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reserve/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reserve/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reserve/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reserve/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reserve/db/database.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reserve/db/db_article.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reserve/db/db_user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reserve/db/hash.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reserve/db/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reserve/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reserve/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reserve/router/article.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reserve/router/blog_get.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reserve/router/blog_post.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reserve/router/user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reserve/schemas.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reserve/ticket.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/router/article.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/reserve/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Udemy - Complete FastAPI masterclass plus Instagram clone project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Udemy - Complete FastAPI masterclass plus Instagram clone project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/reserve/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/db/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/db_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/db/db_user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/hash.py" beforeDir="false" afterPath="$PROJECT_DIR$/db/hash.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/db/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependences.txt" beforeDir="false" afterPath="$PROJECT_DIR$/reserve/dependences.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastapi-practice.db" beforeDir="false" afterPath="$PROJECT_DIR$/reserve/fastapi-test.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/router/blog_get.py" beforeDir="false" afterPath="$PROJECT_DIR$/router/blog_get.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/router/blog_post.py" beforeDir="false" afterPath="$PROJECT_DIR$/router/blog_post.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/router/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/router/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas.py" beforeDir="false" afterPath="$PROJECT_DIR$/schemas.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ticket.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2DitkEAFRxOnyxco71rWmIrszMY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
+    ]
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="50908736-1228-4f8d-adf3-e81139a59275" name="Changes" comment="" />
+      <created>1661193877949</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1661193877949</updated>
+      <workItem from="1661193881091" duration="72000" />
+      <workItem from="1661193966031" duration="188000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

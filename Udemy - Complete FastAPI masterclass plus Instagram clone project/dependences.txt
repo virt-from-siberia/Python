@@ -1,5 +1,1 @@
-uvicorn
-fastapi
-
-
 start project: uvicorn main:app --reload

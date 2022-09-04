@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e2b03fb-8479-4704-b659-aaffdcaebf0c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d0e95c79-4075-4943-9f56-86b73ea69b22.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/db_article.py" beforeDir="false" afterPath="$PROJECT_DIR$/db/db_article.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/db_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/db/db_user.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/router/article.py" beforeDir="false" afterPath="$PROJECT_DIR$/router/article.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ticket.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ticket.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +38,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -59,7 +57,8 @@
       <workItem from="1661193881091" duration="72000" />
       <workItem from="1661193966031" duration="188000" />
       <workItem from="1662062619309" duration="851000" />
-      <workItem from="1662198031592" duration="5291000" />
+      <workItem from="1662198031592" duration="5351000" />
+      <workItem from="1662281613444" duration="14101000" />
     </task>
     <servers />
   </component>

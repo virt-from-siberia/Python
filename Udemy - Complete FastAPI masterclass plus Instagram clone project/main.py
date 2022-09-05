@@ -14,6 +14,7 @@ from fastapi import FastAPI
 from fastapi import Request
 from fastapi import HTTPException, status
 from fastapi.responses import JSONResponse, PlainTextResponse
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 app.include_router(user.router)
@@ -41,4 +42,16 @@ def story_exception_handler(request: Request, exc: StoryException):
 #     return PlainTextResponse(str(exc), status_code=400)
 
 
+origins = [
+    'http://localhost:3000'
+]
+
 models.Base.metadata.create_all(engine)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=['*'],
+    allow_headers=['*']
+)

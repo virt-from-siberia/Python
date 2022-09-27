@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3e2b03fb-8479-4704-b659-aaffdcaebf0c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/router/blog_post.py" beforeDir="false" afterPath="$PROJECT_DIR$/router/blog_post.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/router/product.py" beforeDir="false" afterPath="$PROJECT_DIR$/router/product.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ticket.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +36,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors"
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -61,7 +56,9 @@
       <workItem from="1661193966031" duration="188000" />
       <workItem from="1662062619309" duration="851000" />
       <workItem from="1662198031592" duration="5351000" />
-      <workItem from="1662281613444" duration="23752000" />
+      <workItem from="1662281613444" duration="24390000" />
+      <workItem from="1663052659324" duration="8000" />
+      <workItem from="1664297055911" duration="165000" />
     </task>
     <servers />
   </component>

@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e2b03fb-8479-4704-b659-aaffdcaebf0c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8bf6288e-6932-4cf1-8589-c8989db5a0fa.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8bf6288e-6932-4cf1-8589-c8989db5a0fa.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastapi-test.db" beforeDir="false" afterPath="$PROJECT_DIR$/fastapi-test.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/router/article.py" beforeDir="false" afterPath="$PROJECT_DIR$/router/article.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ticket.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +45,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "settings.editor.splitter.proportion": "0.30266345"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -58,7 +68,9 @@
       <workItem from="1662198031592" duration="5351000" />
       <workItem from="1662281613444" duration="24390000" />
       <workItem from="1663052659324" duration="8000" />
-      <workItem from="1664297055911" duration="165000" />
+      <workItem from="1664297055911" duration="697000" />
+      <workItem from="1664297853122" duration="2930000" />
+      <workItem from="1664330445758" duration="9184000" />
     </task>
     <servers />
   </component>

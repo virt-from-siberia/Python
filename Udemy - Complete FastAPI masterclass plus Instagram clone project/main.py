@@ -6,6 +6,7 @@ from router import blog_post
 from router import user
 from router import article
 from router import product
+from auth import authentication
 
 from db.database import engine
 from db import models
@@ -17,6 +18,7 @@ from fastapi.responses import JSONResponse, PlainTextResponse
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+app.include_router(authentication.router)
 app.include_router(user.router)
 app.include_router(article.router)
 app.include_router(product.router)

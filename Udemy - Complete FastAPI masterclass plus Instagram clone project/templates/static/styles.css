@@ -1,0 +1,12 @@
+tpl-product {
+    border: 1px solid black;
+    margin: 5px;
+    width: 200px;
+}
+
+.tpl-title {
+    border-bottom: 1px dotted blue;
+    padding: 5px;
+    text-align: center;
+    font-size: large;
+}

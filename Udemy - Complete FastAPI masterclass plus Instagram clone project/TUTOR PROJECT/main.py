@@ -62,10 +62,6 @@ async def websocket_endpoint(websocket: WebSocket):
     clients.append(websocket)
     while True:
         data = await websocket.receive_text()
-        print('data')
-        print(data)
-        print('clients')
-        print(clients)
         for client in clients:
             await client.send_text(data)
 

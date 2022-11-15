@@ -1,0 +1,1 @@
+/Applications/Postgres.app/Contents/Versions/15/bin/postgres "-D" "/Users/virtyoz777/Desktop/Learning/python/Python/[youtube] Fast API Crash Course Code-along | Build an app with Postgres, SQL Alchemy, Async, and more/db/postgres" "-p" "6000"

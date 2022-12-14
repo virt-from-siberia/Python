@@ -1,6 +1,8 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from typing import Optional
+from typing import Optional, List
+from database import SessionLocal
+import models
 
 app = FastAPI()
 
@@ -16,9 +18,12 @@ class Item(BaseModel):
         orm_mode = True
 
 
-@app.get('/items')
+db = SessionLocal()
+
+
+@app.get('/items', response_model=List[Item], status_code=200)
 def get_all_items():
-    pass
+    item = db.query(models.Item).all()
 
 
 @app.get('/item/{item_id} ')

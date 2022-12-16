@@ -1,1 +1,8 @@
-1 : 22 minutes
+1 : 33 minutes
+
+
+
+миграция
+alembic revision --autogenerate
+
+alembic upgrate head

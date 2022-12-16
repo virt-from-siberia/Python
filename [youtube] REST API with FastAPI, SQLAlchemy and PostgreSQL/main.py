@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, status, HTTPException
 from pydantic import BaseModel
 from typing import Optional, List
 from database import SessionLocal
@@ -9,9 +9,9 @@ app = FastAPI()
 
 class Item(BaseModel):
     id: int
-    namcription: str
+    name : str
     price: str
-    description: int
+    description: str
     on_offer: bool
 
     class Config:
@@ -23,7 +23,8 @@ db = SessionLocal()
 
 @app.get('/items', response_model=List[Item], status_code=200)
 def get_all_items():
-    item = db.query(models.Item).all()
+    items = db.query(models.Item).all()    
+    return items
 
 
 @app.get('/item/{item_id} ')
@@ -31,12 +32,30 @@ def get_item(item_id: int):
     pass
 
 
-@app.post('/items')
-def create_item():
-    pass
+@app.post('/item', response_model=Item, status_code=status.HTTP_201_CREATED)
+def create_item(item : Item):
+    print("item", item)
+    new_item = models.Item(
+        name=item.name,
+        price=item.price,
+        description=item.description,
+        on_offer=item.on_offer,
+    )
+       
+    
+    db_item = db.query(models.Item).filter(item.name == new_item.name).first()
+    print(db_item)
+    
+    if db_item is not None:
+        raise HTTPException(status_code=400, detail="item already exists")
+    
+    db.add(new_item)
+    db.commit() 
+    
+    return new_item
 
 
-@app.get('/item/{item_id} ')
+@app.get('/item/{item_id}')
 def update_item(item_id: int):
     pass
 

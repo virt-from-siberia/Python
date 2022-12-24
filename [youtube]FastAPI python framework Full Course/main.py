@@ -1,4 +1,7 @@
+from typing import Optional
 from fastapi import FastAPI, APIRouter
+from pydantic import BaseModel
+import uvicorn
 
 
 app = FastAPI()
@@ -23,7 +26,7 @@ def about():
 
 
 @app.get('/blog')
-def index(limit, published=False):
+def index(limit=10, published: bool = False, sort: Optional[str] = None):
     if published:
         return {
             "data": {
@@ -53,7 +56,26 @@ def show(id: int):
 
 
 @app.get('/blog/{id}/comments')
-def show_comments(id: int):
+def show_comments(id: int, limit=10):
+
     return {
         "data": {'1', '2 '}
     }
+
+
+class Blog(BaseModel):
+    title: str
+    body: str
+    published: Optional[bool]
+
+
+@app.post('/blog')
+def create_blog(request: Blog):
+
+    return {
+        "data":  f"Blog was created with title as {request.title}"
+    }
+
+
+# if __name__ == '__main__':
+#     uvicorn.run(app, host="127.0.0.1", port=9000)

@@ -22,6 +22,22 @@ def about():
     }
 
 
+@app.get('/blog')
+def index(limit, published=False):
+    if published:
+        return {
+            "data": {
+                "name": f"{limit} published blogs from the db",
+            }
+        }
+    else:
+        return {
+            "data": {
+                "name": f"{limit} all blogs from the db",
+            }
+        }
+
+
 @app.get('/blog/unpublished')
 def show_unpublished(id: int):
     return {

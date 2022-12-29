@@ -34,7 +34,7 @@ def get_all_blogs(db: Session = Depends(get_db)):
     return blogs
 
 
-@app.get('/blog/{id}', status_code=status.HTTP_200_OK)
+@app.get('/blog/{id}', status_code=status.HTTP_200_OK, response_model=schemas.ShowBlog)
 def get_blog(id: int, db: Session = Depends(get_db)):
     blog = db.query(models.Blog).filter(models.Blog.id == id).first()
 
@@ -71,3 +71,19 @@ def update_blog(id: int, request: schemas.Blog, db: Session = Depends(get_db)):
     db.commit()
 
     return blog
+
+
+@app.post('/user')
+def create_user(request: schemas.User,  db: Session = Depends(get_db)):
+    print(request)
+    new_user = models.User(
+        firstname=request.firstname,
+        lastname=request.lastname,
+        email=request.email,
+        password=request.password,
+    )
+    db.add(new_user)
+    db.commit()
+    db.refresh(new_user)
+
+    return new_user

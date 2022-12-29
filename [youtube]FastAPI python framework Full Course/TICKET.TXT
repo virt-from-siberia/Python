@@ -1,6 +1,6 @@
 
 https://www.youtube.com/watch?v=7t2alSnE2-I&list=PLe30vg_FG4OSKH_8zpLlnf4WpNlzL526E&ab_channel=Bitfumes
 
-2-14 minutes
+2-27 minutes
 
 uvicorn main:app --reload

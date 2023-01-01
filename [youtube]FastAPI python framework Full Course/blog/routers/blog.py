@@ -4,6 +4,7 @@ from sqlalchemy.orm import Session
 from fastapi import FastAPI, Depends, HTTPException, status, Response
 
 from .. import schemas, database, models
+from .. repository import blog
 
 router = APIRouter(
     tags=['blogs'],
@@ -13,55 +14,24 @@ router = APIRouter(
 
 @router.post('/', status_code=status.HTTP_201_CREATED)
 def create(request: schemas.Blog, db: Session = Depends(database.get_db)):
-    new_blog = models.Blog(title=request.title, body=request.body, user_id=1)
-    db.add(new_blog)
-    db.commit()
-    db.refresh(new_blog)
-
-    return new_blog
+    return blog.create(db, request)
 
 
 @router.get('/', response_model=List[schemas.Blog])
 def get_all_blogs(db: Session = Depends(database.get_db)):
-    blogs = db.query(models.Blog).all()
-
-    return blogs
+    return blog.get_all(db)
 
 
-@router.get('/{id}', status_code=status.HTTP_200_OK, response_model=schemas.ShowBlog)
+@router.get('/{id}', status_code=status.HTTP_200_OK)
 def get_blog(id: int, db: Session = Depends(database.get_db)):
-    blog = db.query(models.Blog).filter(models.Blog.id == id).first()
-
-    if not blog:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,
-                            detail=f"blog with {id} not found")
-
-    return blog
+    return blog.get_by_id(db, id)
 
 
 @router.delete('/{id}', status_code=status.HTTP_200_OK)
 def delete_blog(id: int,  db: Session = Depends(database.get_db)):
-    blog = db.query(models.Blog).filter(models.Blog.id == id)
-
-    if not blog.first():
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,
-                            detail=f"blog with {id} not found")
-
-    blog.delete(synchronize_session=False)
-    db.commit()
-
-    return {"details": f"blog with id {id} has been deleted"}
+    return blog.delete(db, id)
 
 
 @router.put('/{id}', status_code=status.HTTP_200_OK)
 def update_blog(id: int, request: schemas.Blog, db: Session = Depends(database.get_db)):
-    blog = db.query(models.Blog).filter(models.Blog.id == id)
-
-    if not blog.first():
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,
-                            detail=f"blog with {id} not found")
-
-    blog.update(request)
-    db.commit()
-
-    return blog
+    return blog.update(db, id, request)

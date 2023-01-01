@@ -13,11 +13,3 @@ app = FastAPI()
 
 app.include_router(blog.router)
 app.include_router(user.router)
-
-
-# def get_db():
-#     db = SessionLocal()
-#     try:
-#         yield db
-#     finally:
-#         db.close()

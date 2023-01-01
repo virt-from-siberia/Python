@@ -7,10 +7,10 @@ from .. hashing import Hash
 from .. import schemas, database, models
 
 
-router = APIRouter()
+router = APIRouter(tags=['user'], prefix='/user')
 
 
-@router.post('/user', response_model=schemas.ShowUser, tags=['user'])
+@router.post('/', response_model=schemas.ShowUser)
 def create_user(request: schemas.User,  db: Session = Depends(database.get_db)):
     # hashedPassword = pwd_cxt.hash(request.password)
 
@@ -28,13 +28,13 @@ def create_user(request: schemas.User,  db: Session = Depends(database.get_db)):
     return new_user
 
 
-@router.get('/user', tags=['user'])
+@router.get('/')
 def get_all_users(db: Session = Depends(database.get_db)):
     users = db.query(models.User).all()
     return users
 
 
-@router.get('/user/{id}', response_model=schemas.ShowUser, tags=['user'])
+@router.get('/{id}', response_model=schemas.ShowUser)
 def get_user(id: int, db: Session = Depends(database.get_db)):
     user = db.query(models.User).filter(models.User.id == id).first()
 

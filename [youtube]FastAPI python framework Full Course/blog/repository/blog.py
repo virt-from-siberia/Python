@@ -38,7 +38,7 @@ def get_by_id(db: Session, id: int):
     return blog
 
 
-def update(db: Session, id: int, request):
+def update(db: Session,  id: int, request):
     blog = db.query(models.Blog).filter(models.Blog.id == id)
 
     if not blog.first():

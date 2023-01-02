@@ -1,67 +1,35 @@
+from fastapi import FastAPI
 from typing import Optional
-from fastapi import FastAPI, APIRouter
 from pydantic import BaseModel
-from passlib.context import CryptContext
-import uvicorn
 
 
 app = FastAPI()
 
 
-@app.get('/')
-def index():
-    return {
-        "data": {
-            "name": "Aleksey",
-        }
-    }
-
-
-@app.get('/about')
-def about():
-    return {
-        "data": {
-            "name": "about",
-        }
-    }
-
-
 @app.get('/blog')
-def index(limit=10, published: bool = False, sort: Optional[str] = None):
+def index(limit=10, published: bool = True, sort: Optional[str] = None):
+    # only get 10 published blogs
     if published:
-        return {
-            "data": {
-                "name": f"{limit} published blogs from the db",
-            }
-        }
+        return {'data': f'{limit} published blogs from the db'}
     else:
-        return {
-            "data": {
-                "name": f"{limit} all blogs from the db",
-            }
-        }
+        return {'data': f'{limit} blogs from the db'}
 
 
 @app.get('/blog/unpublished')
-def show_unpublished(id: int):
-    return {
-        "data": "all unpublished blogs "
-    }
+def unpublished():
+    return {'data': 'all unpublished blogs'}
 
 
 @app.get('/blog/{id}')
 def show(id: int):
-    return {
-        "data": id
-    }
+    # fetch blog with id = id
+    return {'data': id}
 
 
 @app.get('/blog/{id}/comments')
-def show_comments(id: int, limit=10):
-
-    return {
-        "data": {'1', '2 '}
-    }
+def comments(id, limit=10):
+    # fetch comments of blog with id = id
+    return {'data': {'1', '2'}}
 
 
 class Blog(BaseModel):
@@ -71,12 +39,5 @@ class Blog(BaseModel):
 
 
 @app.post('/blog')
-def create_blog(request: Blog):
-
-    return {
-        "data":  f"Blog was created with title as {request.title}"
-    }
-
-
-# if __name__ == '__main__':
-#     uvicorn.run(app, host="127.0.0.1", port=9000)
+def create_blog(blog: Blog):
+    return {'data': f"Blog is created with title as {blog.title}"}

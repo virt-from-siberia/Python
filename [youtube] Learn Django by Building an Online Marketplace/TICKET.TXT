@@ -4,5 +4,14 @@ https://www.youtube.com/watch?v=ZxMB6Njs3ck&t=2s&ab_channel=freeCodeCamp.org
 
 
 win: cd ./venv/scripts/activate
+
 start: cd marketplace\  
        python manage.py runserver
+
+after add new model shuld be done -
+db:
+      python manage.py makemigrations
+      python manage.py migrate
+
+create superuser
+      python manage.py createsuperuser

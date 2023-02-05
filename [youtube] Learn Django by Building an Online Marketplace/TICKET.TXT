@@ -1,0 +1,7 @@
+https://www.youtube.com/watch?v=ZxMB6Njs3ck&t=2s&ab_channel=freeCodeCamp.org
+
+BEGIN
+
+
+win: cd ./venv/scripts/activate
+start: django-admin startproject market

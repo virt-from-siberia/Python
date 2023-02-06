@@ -1,6 +1,6 @@
 https://www.youtube.com/watch?v=ZxMB6Njs3ck&t=2s&ab_channel=freeCodeCamp.org
 
-24 minutes
+49 minutes
 
 
 win: cd ./venv/scripts/activate

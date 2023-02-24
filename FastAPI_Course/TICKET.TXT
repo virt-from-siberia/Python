@@ -1,8 +1,12 @@
-4 video begin
+5 video begin
 
 install: 
-    pip install fastapi[all]
+    pip install fastapi[all]  sqlalchemy alembic psycopg2
 
 start:
     uvicorn main:app
+
+migratons:
+    alembic init migrations
+    alembic revision --autogenerate -m "Database creation"
   

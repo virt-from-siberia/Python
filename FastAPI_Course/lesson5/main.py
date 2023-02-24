@@ -56,7 +56,7 @@ class User(BaseModel):
     degree: Optional[List[Degree]] = []
 
 
-class Trade(BaseModel): 
+class Trade(BaseModel):
     id: int
     user_id: int
     currency: str = Field(max_length=5)

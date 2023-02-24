@@ -45,4 +45,3 @@ def update_user(user_id: int, new_name: str, new_role: str):
         current_user['role'] = new_role
 
     return {"status": 200, "data": current_user}
-

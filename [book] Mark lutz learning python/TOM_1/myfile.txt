@@ -1,0 +1,2 @@
+hello world
+goog by text file

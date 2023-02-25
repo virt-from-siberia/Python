@@ -8,3 +8,9 @@ REAL_DATABASE_URL = env.str(
     "REAL_DATABASE_URL",
     default="postgresql+asyncpg://postgres:postgres@localhost:5432/fastapi"
 )  # connect string for the database
+
+
+TEST_DATABASE_URL = env.str(
+    "TEST_DATABASE_URL",
+    default="postgresql+asyncpg://postgres:postgres@localhost:5432/fastapi_tests"
+)

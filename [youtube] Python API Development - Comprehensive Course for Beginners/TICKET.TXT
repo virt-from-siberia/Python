@@ -1,6 +1,6 @@
 https://www.youtube.com/watch?v=0sOvCWFmrtA&ab_channel=freeCodeCamp.org
 
-2:01 minutes
+2:18 minutes
 
 
 pip install fastapi[all]

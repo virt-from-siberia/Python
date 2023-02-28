@@ -3,9 +3,25 @@ from fastapi import FastAPI, Response, status, HTTPException
 from fastapi.params import Body
 from pydantic import BaseModel
 from random import randrange
+import psycopg2
+from psycopg2.extras import RealDictCursor
 
 
 app = FastAPI()
+
+try:
+    conn = psycopg2.connect(
+        host='localhost',
+        database='pythonApiDevelopment',
+        user='postgres', password='postgres',
+        cursor_factory=RealDictCursor)
+    cursor = conn.cursor()
+    print("Connected to PostgreSQL was successful")
+
+except Exception as error:
+    print('Could not connect to PostgreSQL')
+    print("error: ", error)
+
 
 my_posts = [
     {
@@ -48,13 +64,13 @@ def _find_index_post(id: int):
 
 @app.get("/")
 async def root():
-    
+
     return {"message": "Hello World"}
 
 
 @app.get('/posts')
 async def get_posts():
-    
+
     return {"data": my_posts}
 
 
@@ -63,7 +79,7 @@ async def create_posts(post: Post):
     post_dict = post.dict()
     post_dict['id'] = randrange(0, 10000000000)
     my_posts.append(post_dict)
-    
+
     return {"post": post_dict}
 
 

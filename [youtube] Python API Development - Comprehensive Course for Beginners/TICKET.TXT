@@ -1,8 +1,11 @@
 https://www.youtube.com/watch?v=0sOvCWFmrtA&ab_channel=freeCodeCamp.org
 
-3:57 minutes
+4:04 minutes
 
 
-pip install fastapi[all]
+pip install:
+     fastapi[all]
+     psycopg2
+
 
 uvicorn app.main:app --reload

@@ -29,7 +29,7 @@ class Post(BaseModel):
     title: str
     content: str
     published: bool = True
-    rating: Optional[int] = None
+    # rating: Optional[int] = None
 
 
 def _file_post(id: int):

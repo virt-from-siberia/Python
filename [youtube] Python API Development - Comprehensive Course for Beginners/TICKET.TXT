@@ -6,6 +6,7 @@ https://www.youtube.com/watch?v=0sOvCWFmrtA&ab_channel=freeCodeCamp.org
 pip install:
      fastapi[all]
      psycopg2
+     sqlalchemy
 
 
 uvicorn app.main:app --reloads

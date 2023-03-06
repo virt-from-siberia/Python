@@ -1,12 +1,13 @@
 https://www.youtube.com/watch?v=0sOvCWFmrtA&ab_channel=freeCodeCamp.org
 
-5:40 minutes
+6:25 minutes
 
 
 pip install:
      fastapi[all]
      psycopg2
      sqlalchemy
+     passlib[bcrypt]
 
 
-uvicorn app.main:app --reloads
+uvicorn app.main:app --reload

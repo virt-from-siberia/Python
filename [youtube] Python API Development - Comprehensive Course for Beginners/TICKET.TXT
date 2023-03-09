@@ -1,6 +1,6 @@
 https://www.youtube.com/watch?v=0sOvCWFmrtA&ab_channel=freeCodeCamp.org
 
-6:25 minutes
+7:27 minutes
 
 
 pip install:
@@ -8,6 +8,7 @@ pip install:
      psycopg2
      sqlalchemy
      passlib[bcrypt]
+     python-jose[cryptography]
 
 
 uvicorn app.main:app --reload

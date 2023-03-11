@@ -47,6 +47,6 @@ def get_current_user(token: str = Depends(o2auth2_scheme),
         })
 
     token = verify_token(token, credentials_expiration)
-    user = db.query(models.User).filter(models.User == token.id).first()
+    user = db.query(models.User).filter(models.User.id == token.id).first()
 
     return user

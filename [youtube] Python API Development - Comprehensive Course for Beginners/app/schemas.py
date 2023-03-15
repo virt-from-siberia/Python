@@ -61,5 +61,5 @@ class TokenData(BaseModel):
 
 class Vote(BaseModel):
     post_id: int
-    user_id: int
+    # user_id: int
     dir: conint(le=1)

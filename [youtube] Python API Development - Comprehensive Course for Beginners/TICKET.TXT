@@ -1,6 +1,6 @@
 https://www.youtube.com/watch?v=0sOvCWFmrtA&ab_channel=freeCodeCamp.org
 
-11:05 minutes
+11:19 minutes
 
 
 pip install:
@@ -15,4 +15,9 @@ pip install:
 uvicorn app.main:app --reload
 
 migration:
+
+     создать ревизию в ручную
      alembic revision -m "create post table"
+
+     автогенерация ревизии
+     alembic revision --autogenerate -m "add vote"

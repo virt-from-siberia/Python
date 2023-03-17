@@ -17,8 +17,11 @@ depends_on = None
 
 
 def upgrade() -> None:
+    op.add_column('posts', sa.Column('published', sa.Boolean(),
+                  nullable=False, server_default='TRUE'),)
     pass
 
 
 def downgrade() -> None:
+    op.drop_column('posts', 'published')
     pass

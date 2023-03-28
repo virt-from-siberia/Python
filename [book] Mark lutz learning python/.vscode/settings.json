@@ -8,5 +8,7 @@
             "path": "/usr/bin/python3",
             "type": "pythonEnvironment"
         }
-    ]
+    ],
+    "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+    "editor.fontWeight": "600"
 }
